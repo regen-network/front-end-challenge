@@ -14,7 +14,7 @@ Make sure to have [Keplr browser extension](https://chrome.google.com/webstore/d
 
 Write a basic single page application that connects to Keplr and displays your account balance on [Regen Hambach Testnet](https://docs.regen.network/getting-started/live-networks.html#hambach-testnet). For the purpose of this exercise, let's assume that the end user already has Keplr installed.
 
-In order to do that, you'll need to use Keplr ["Suggest Chain" feature](https://docs.keplr.app/api/suggest-chain.html) with the following parameters: 
+In order to add Regen Hambach Testnet to Keplr, you'll need to use Keplr ["Suggest Chain" feature](https://docs.keplr.app/api/suggest-chain.html) with the following parameters: 
 ```ts
 {
   // Chain-id of the Regen chain.
@@ -100,11 +100,13 @@ In order to do that, you'll need to use Keplr ["Suggest Chain" feature](https://
   },
   features: ['stargate'],
 }
-```      
+```
 
-Then, in order to query your account balance, you can use:
+Here's Keplr API documentation: https://docs.keplr.app/api/
+
+Then, in order to query your account balance, you can use our RPC endpoint http://hambach.regen.network:26657/ along with:
 - either our JS library for interacting with Regen Ledger: https://github.com/regen-network/regen-js, in particular [the bank module (`x/bank`) query service](https://github.com/regen-network/regen-js/blob/main/packages/api/proto/cosmos/bank/v1beta1/query.proto)
-- or [CosmJS](https://github.com/cosmos/cosmjs), in particular https://cosmos.github.io/cosmjs/latest/stargate/modules/queries_bank.html.
+- or [CosmJS](https://github.com/cosmos/cosmjs), in particular https://cosmos.github.io/cosmjs/latest/stargate/classes/signingstargateclient.SigningStargateClient.html
 
 Here's some additional documentation about `x/bank` client: https://docs.cosmos.network/master/modules/bank/06_client.html#
 
