@@ -20,7 +20,7 @@ Ideally your submission should involve a component-based approach, and have a re
 
 *Optional:*
 
-Show the blocks transactions details if any. https://cosmos.github.io/cosmjs/latest/proto-signing/modules/decode.html provides some utility functions to decode transaction raw data.
+Show the blocks transactions details if any. https://cosmos.github.io/cosmjs/latest/proto-signing/ provides some utility functions to [decode transaction raw data](https://cosmos.github.io/cosmjs/latest/proto-signing/modules/decode.html) and [messages](https://cosmos.github.io/cosmjs/latest/stargate/classes/signingstargateclient.SigningStargateClient.html#registry).
 
 ## What we're looking for
 
