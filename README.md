@@ -103,9 +103,11 @@ In order to do that, you'll need to use Keplr ["Suggest Chain" feature](https://
 ```      
 
 Then, in order to query your account balance, you can use:
-- either our JS library for interacting with Regen Ledger: https://github.com/regen-network/regen-js, in particular [`x/bank` query service](https://github.com/regen-network/regen-js/blob/main/packages/api/proto/cosmos/bank/v1beta1/query.proto)
+- either our JS library for interacting with Regen Ledger: https://github.com/regen-network/regen-js, in particular [the bank module (`x/bank`) query service](https://github.com/regen-network/regen-js/blob/main/packages/api/proto/cosmos/bank/v1beta1/query.proto)
 - or [CosmJS](https://github.com/cosmos/cosmjs), in particular https://cosmos.github.io/cosmjs/latest/stargate/modules/queries_bank.html.
- 
+
+Here's some additional documentation about `x/bank` client: https://docs.cosmos.network/master/modules/bank/06_client.html#
+
 You can use this faucet to get some tokens to play with: 
 ```sh
 curl http://147.182.238.116:8000/faucet/<addr>
