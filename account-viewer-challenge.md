@@ -106,7 +106,7 @@ Here's Keplr API documentation: https://docs.keplr.app/api/
 
 Then, in order to query your account balance, you can use our RPC endpoint http://hambach.regen.network:26657/ along with:
 - either our JS library for interacting with Regen Ledger: https://github.com/regen-network/regen-js, in particular [the bank module (`x/bank`) query service](https://github.com/regen-network/regen-js/blob/main/packages/api/proto/cosmos/bank/v1beta1/query.proto)
-- or [CosmJS](https://github.com/cosmos/cosmjs), in particular https://cosmos.github.io/cosmjs/latest/stargate/classes/signingstargateclient.SigningStargateClient.html
+- or [CosmJS](https://github.com/cosmos/cosmjs), in particular https://cosmos.github.io/cosmjs/latest/stargate/classes/StargateClient.html which is a client for [Cosmos-SDK](https://github.com/cosmos/cosmos-sdk) Stargate release.
 
 Here's some additional documentation about `x/bank` client: https://docs.cosmos.network/master/modules/bank/06_client.html#
 
