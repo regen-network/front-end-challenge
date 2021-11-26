@@ -1,6 +1,6 @@
 # Front-End Code Challenge
 
-This challenge consists of building a simplified version of a block explorer for [Regen Ledger](https://github.com/regen-network/regen-ledger) using React and TypeScript.
+This challenge consists of building a simplified version of a block explorer for [Regen Ledger](https://github.com/regen-network/regen-ledger) (built on top of [Cosmos SDK](https://github.com/cosmos/cosmos-sdk)) using React and TypeScript.
 
 The goal here is for us to get a basic understanding of how you code, so it's not meant to be very difficult. Ideally you shouldn't spend more than a few hours on it.
 
@@ -12,7 +12,7 @@ We recommend starting from a basic template (e.g. [create-react-app](https://rea
 
 Write a basic single page application that displays the list of recent blocks for [Regen Hambach Testnet](https://docs.regen.network/getting-started/live-networks.html#hambach-testnet). You can use this RPC endpoint http://hambach.regen.network:26657/ to query relevant data based on [Tendermint RPC documentation](https://docs.tendermint.com/master/rpc/).
 
-We recommend to use https://github.com/cosmos/cosmjs to get latest blocks info, in particular https://cosmos.github.io/cosmjs/latest/stargate/classes/signingstargateclient.SigningStargateClient.html
+We recommend to use https://github.com/cosmos/cosmjs to get latest blocks info, in particular https://cosmos.github.io/cosmjs/latest/stargate/classes/StargateClient.html which is a client for the Cosmos SDK "Stargate" release.
 
 You can have a look at Aneka block explorer for some inspiration: https://hambach.regen.aneka.io/
 
@@ -20,7 +20,11 @@ Ideally your submission should involve a component-based approach, and have a re
 
 *Optional:*
 
-Show the blocks transactions details if any. https://cosmos.github.io/cosmjs/latest/proto-signing/ provides some utility functions to [decode transaction raw data](https://cosmos.github.io/cosmjs/latest/proto-signing/modules/decode.html) and [messages](https://cosmos.github.io/cosmjs/latest/stargate/classes/signingstargateclient.SigningStargateClient.html#registry).
+Show the blocks transactions details if any.
+
+In Cosmos SDK, [transactions](https://docs.cosmos.network/master/core/transactions.html) consist of 1 or more signed [`sdk.Msg`'s](https://docs.cosmos.network/master/building-modules/messages-and-queries.html#messages) which are objects whose end-goal is to trigger state transitions.
+
+https://cosmos.github.io/cosmjs/latest/proto-signing/ provides some utility functions to decode [transaction raw data](https://cosmos.github.io/cosmjs/latest/proto-signing/modules.html#decodeTxRaw) as well as transaction `Msg`'s using a [Registry](https://cosmos.github.io/cosmjs/latest/proto-signing/classes/Registry.html) instantiated with Stargate [defaultRegistryTypes](https://cosmos.github.io/cosmjs/latest/stargate/modules.html#defaultRegistryTypes). Supported `Msg` types are registered within this Registry which then provides methods for decoding/encoding such `Msg`s.
 
 ## What we're looking for
 
