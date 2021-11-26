@@ -1,4 +1,4 @@
-# Account Viewer Front-End Code Challenge
+# Account Viewer Code Challenge
 
 This challenge consists of building a single page application integrated with [Keplr](https://wallet.keplr.app/) wallet that shows the user account balance using React and TypeScript.
 
