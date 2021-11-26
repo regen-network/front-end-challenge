@@ -1,4 +1,4 @@
-# Front-End Code Challenge
+# Block Explorer Code Challenge
 
 This challenge consists of building a simplified version of a block explorer for [Regen Ledger](https://github.com/regen-network/regen-ledger) (built on top of [Cosmos SDK](https://github.com/cosmos/cosmos-sdk)) using React and TypeScript.
 
