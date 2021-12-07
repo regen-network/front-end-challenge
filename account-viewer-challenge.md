@@ -112,7 +112,7 @@ Here's some additional documentation about `x/bank` client: https://docs.cosmos.
 
 You can use this faucet to get some tokens to play with: 
 ```sh
-curl http://147.182.238.116:8000/faucet/<addr>
+curl http://185.181.11.150:8000/faucet/<addr>
 ```
 
 Ideally your submission should involve a component-based approach, and have a responsive layout (optimising for both mobile and web views).
