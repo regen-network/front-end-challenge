@@ -12,19 +12,19 @@ Make sure to have [Keplr browser extension](https://chrome.google.com/webstore/d
 
 ## App
 
-Write a basic single page application that connects to Keplr and displays your account balance on [Regen Hambach Testnet](https://docs.regen.network/getting-started/live-networks.html#hambach-testnet). For the purpose of this exercise, let's assume that the end user already has Keplr installed.
+Write a basic single page application that connects to Keplr and displays your account balance on [Regen Redwood Testnet](https://docs.regen.network/ledger/get-started/live-networks.html#redwood-testnet). For the purpose of this exercise, let's assume that the end user already has Keplr installed.
 
-In order to add Regen Hambach Testnet to Keplr, you'll need to use Keplr ["Suggest Chain" feature](https://docs.keplr.app/api/suggest-chain.html) with the following parameters: 
+In order to add Regen Redwood Testnet to Keplr, you'll need to use Keplr ["Suggest Chain" feature](https://docs.keplr.app/api/suggest-chain.html) with the following parameters: 
 ```ts
 {
   // Chain-id of the Regen chain.
-  chainId: 'regen-hambach-1',
+  chainId: 'regen-redwood-1',
   // The name of the chain to be displayed to the user.
-  chainName: 'Regen Hambach Testnet',
+  chainName: 'Regen Redwood Testnet',
   // RPC endpoint of the chain.
-  rpc: 'http://hambach.regen.network:26657/',
+  rpc: 'http://redwood.regen.network:26657/',
   // REST endpoint of the chain.
-  rest: 'http://hambach.regen.network:1317/',
+  rest: 'http://redwood.regen.network:1317/',
   // Staking coin information
   stakeCurrency: {
     // Coin denomination to be displayed to the user.
@@ -104,7 +104,7 @@ In order to add Regen Hambach Testnet to Keplr, you'll need to use Keplr ["Sugge
 
 Here's Keplr API documentation: https://docs.keplr.app/api/
 
-Then, in order to query your account balance, you can use our RPC endpoint http://hambach.regen.network:26657/ along with:
+Then, in order to query your account balance, you can use our RPC endpoint http://redwood.regen.network:26657/ along with:
 - either our JS library for interacting with Regen Ledger: https://github.com/regen-network/regen-js, in particular [the bank module (`x/bank`) query service](https://github.com/regen-network/regen-js/blob/main/packages/api/proto/cosmos/bank/v1beta1/query.proto)
 - or [CosmJS](https://github.com/cosmos/cosmjs), in particular https://cosmos.github.io/cosmjs/latest/stargate/classes/StargateClient.html which is a client for [Cosmos-SDK](https://github.com/cosmos/cosmos-sdk) Stargate release.
 
@@ -112,7 +112,7 @@ Here's some additional documentation about `x/bank` client: https://docs.cosmos.
 
 You can use this faucet to get some tokens to play with: 
 ```sh
-curl http://185.181.11.150:8000/faucet/<addr>
+curl http://209.182.218.23:8000/faucet/<addr>
 ```
 
 Ideally your submission should involve a component-based approach, and have a responsive layout (optimising for both mobile and web views).
