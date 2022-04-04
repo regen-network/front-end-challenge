@@ -10,11 +10,11 @@ We recommend starting from a basic template (e.g. [create-react-app](https://rea
 
 ## App
 
-Write a basic single page application that displays the list of recent blocks for [Regen Hambach Testnet](https://docs.regen.network/getting-started/live-networks.html#hambach-testnet). You can use this RPC endpoint http://hambach.regen.network:26657/ to query relevant data based on [Tendermint RPC documentation](https://docs.tendermint.com/master/rpc/).
+Write a basic single page application that displays the list of recent blocks for [Regen Redwood Testnet](https://docs.regen.network/ledger/get-started/live-networks.html#redwood-testnet). You can use this RPC endpoint http://redwood.regen.network:26657/ to query relevant data based on [Tendermint RPC documentation](https://docs.tendermint.com/master/rpc/).
 
 We recommend to use https://github.com/cosmos/cosmjs to get latest blocks info, in particular https://cosmos.github.io/cosmjs/latest/stargate/classes/StargateClient.html which is a client for the Cosmos SDK "Stargate" release.
 
-You can have a look at Aneka block explorer for some inspiration: https://hambach.regen.aneka.io/
+You can have a look at Aneka block explorer for some inspiration: https://redwood.regen.aneka.io/
 
 Ideally your submission should involve a component-based approach, and have a responsive layout (optimising for both mobile and web views).
 
