@@ -13,6 +13,7 @@ We recommend starting from a basic template (e.g. [create-react-app](https://rea
 Write a basic single page application that displays the list of recent blocks for [Regen Redwood Testnet](https://docs.regen.network/ledger/get-started/live-networks.html#redwood-testnet). You can use this RPC endpoint http://redwood.regen.network:26657/ to query relevant data based on [Tendermint RPC documentation](https://docs.tendermint.com/master/rpc/).
 
 We recommend to use https://github.com/cosmos/cosmjs to get latest blocks info, in particular https://cosmos.github.io/cosmjs/latest/stargate/classes/StargateClient.html which is a client for the Cosmos SDK "Stargate" release.
+If you choose to use Webpack 5, please make sure to update the config accordingly: https://github.com/cosmos/cosmjs#webpack-configs
 
 You can have a look at Aneka block explorer for some inspiration: https://redwood.regen.aneka.io/
 
