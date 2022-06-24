@@ -1,6 +1,7 @@
 # Account Viewer Code Challenge
 
-This challenge consists of building a single page application integrated with [Keplr](https://wallet.keplr.app/) wallet that shows the user account balance using React and TypeScript.
+This challenge consists of building a single page application integrated with [Keplr](https://wallet.keplr.app/) wallet that shows the user REGEN account balance using React and 
+TypeScript.
 
 The goal here is for us to get a basic understanding of how you code, so it's not meant to be very difficult. Ideally you shouldn't spend more than a few hours on it.
 
